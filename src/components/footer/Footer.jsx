@@ -58,7 +58,7 @@ export function Footer() {
 
 					<ul className={styles.devsList}>
 						{Object.keys(devs).map((dev, i) => (
-							<li className={styles.devItem} key={dev + i}>
+							<div className={styles.devItem} key={dev + i}>
 								<a href={devs[dev].github} target='_blank' rel='noreferrer'>
 									<img
 										src={devs[dev].img}
@@ -66,7 +66,7 @@ export function Footer() {
 										className={styles.devImage}
 									/>
 								</a>
-							</li>
+							</div>
 						))}
 					</ul>
 
