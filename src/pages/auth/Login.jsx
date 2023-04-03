@@ -39,7 +39,7 @@ export const Login = () => {
 				// const user = userCredential.user;
 				setIsLoading(false)
 				toast.success('Login Successful...')
-				redirectUser()
+				// redirectUser()
 			})
 			.catch(error => {
 				setIsLoading(false)
