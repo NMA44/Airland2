@@ -5,7 +5,9 @@ const app = express()
 const cors = require('cors')
 
 // This is your test secret API key..
-const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
+const stripe = require('stripe')(
+	'sk_test_51Mpy4SJLEMVsSOvcXOXuvo80sehaEIpmbpNzXQSstr7e0Hkn7NMmZWlLiqSoDr6qRoNc3gcSPLRK7qKvdqZ0fGaG00mppm9obr'
+)
 
 app.use(cors())
 
