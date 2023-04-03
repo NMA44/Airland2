@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 4242
 const app = express()
 const cors = require('cors')
 
-// This is your test secret API key.
+// This is your test secret API key..
 const stripe = require('stripe')(process.env.STRIPE_PRIVATE_KEY)
 
 app.use(cors())
