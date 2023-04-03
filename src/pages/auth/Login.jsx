@@ -36,10 +36,9 @@ export const Login = () => {
 
 		signInWithEmailAndPassword(auth, email, password)
 			.then(userCredential => {
-				const user = userCredential.user
 				setIsLoading(false)
 				toast.success('Login Successful...')
-				redirectUser(user)
+				redirectUser()
 			})
 			.catch(error => {
 				setIsLoading(false)
@@ -88,7 +87,7 @@ export const Login = () => {
 								value={password}
 								onChange={e => setPassword(e.target.value)}
 							/>
-							<button type='submit' className='--btn --btn-primary --btn-block'>
+							<button type='submit' className='--btn --btn-danger --btn-block'>
 								Login
 							</button>
 							<div className={styles.links}>
