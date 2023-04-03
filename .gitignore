@@ -111,7 +111,6 @@ package-lock.json
 firebase.json
 
 # firebase-config.js
-config.js
-.config.js
+
 #node modules
 node_modules
